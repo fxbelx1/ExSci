@@ -52,7 +52,7 @@
                 
                 <center>
                     </br>
-                    <input type="submit" value="Enviar">
+                    <a style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd">Comenzar</a>
                     </br></br>
                     <a id="op" href="login.html" style="font-family: 'Baloo Paaji 2', cursive;">¿Ya tienes una cuenta?</a>
                 </center>
