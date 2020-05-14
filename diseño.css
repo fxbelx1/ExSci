@@ -3,6 +3,11 @@ body{
     background-color: #3a3939;
 }
 
+#menu{
+    margin: 0em;
+    background-color: #fbe99e;
+}
+
 #izquierda{
     margin: auto;
     padding: 1.00em;
@@ -13,7 +18,7 @@ body{
 }
 
 
-header{
+#header1{
     background-color: #3a3939;
     text-align: center;
     color: black;
@@ -25,7 +30,7 @@ h1{
     text-align: center;
 }
 
-p{
+#p1{
     font-size: 18px;
     text-align: center;
 }
@@ -148,6 +153,13 @@ input[type="text"], input[type="password"]{
 #op{
     color: #93ece9;
     text-decoration: none;
+}
+
+#header2{
+    width: 100%;
+    overflow: hidden;
+    background-color: #3a3939;
+    margin-bottom: 20px;
 }
 
 
