@@ -1,14 +1,12 @@
 <?php
-    //conectamos Con el servidor
-    $host ="localhost";
-    $dbname = "exsci";
-    $user ="test_us";
-    $pass ="123456";
+    $server = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "exsci";
 
-    $conectar = mysqli_connect($host, $user, $pass, $dbname)
-        or die( "No se logró conectar al base de datos con éxito: ".mysqli_connect_error() );
+    $conexion = new mysqli($server,$user,$pass,$db);
 
-    mysqli_set_charset($conectar, "utf8");
-
-    // echo"Conexión con base de datos exitosa";
+    if($conexion->connect_errno){
+        die("La conexion ha fallado". $conexion->connect_errno);
+    }
 ?>

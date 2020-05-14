@@ -1,27 +1,3 @@
-<?php
-    if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
-        $correo = $_POST['correo'];
-        $nickname = $_POST['nickname'];
-        $contra = $_POST['contra'];
-        include("conexion.php");
-
-        if( !empty($correo) && !empty($nickname) && !empty($contra) ){
-            include("conexion.php");
-            
-            $sql = "INSERT INTO usuarios(nickname, contra, correo) VALUES('$nickname', md5('$contra'), '$correo')";
-
-            mysqli_query($conectar, $sql);
-            $registrado = mysqli_affected_rows($conectar);
-
-            echo $registrado." fila afectada.";
-
-        }else{
-            echo"Se deben rellenar todos los campos.";
-        }
-        
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -33,7 +9,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header1">
             <img id="logo5" src="exsci_logo.png" alt="Logo de ExSci">
             </br></br>
         </header>
@@ -42,21 +18,26 @@
             <h2 style="font-family: 'Bebas Neue', cursive;">Crear una cuenta</h2>
             <form action="signup.php" method="POST">
                 <label style="font-family: 'Baloo Paaji 2', cursive;" for="correo">Correo electrónico </label>
-                <input type="text" placeholder="tu correo electrónico" required name="correo">
+                <input type="text" placeholder="tu correo electrónico" name="correo">
                 
                 <label style="font-family: 'Baloo Paaji 2', cursive;" for="nickname">Nombre de usuario</label>
-                <input type="text" placeholder="nombre de usuario que deseas tener" required name="nickname">
+                <input type="text" placeholder="nombre de usuario que deseas tener" name="nickname">
                 
                 <label style="font-family: 'Baloo Paaji 2', cursive;" for="contra">Contraseña</label>
-                <input type="password" placeholder="contraseña para iniciar sesion en tu cuenta" required name="contra">
+                <input type="password" placeholder="contraseña para iniciar sesion en tu cuenta" name="contra">
                 
                 <center>
                     </br>
-                    <a style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd">Comenzar</a>
+                    <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
                     </br></br>
                     <a id="op" href="login.html" style="font-family: 'Baloo Paaji 2', cursive;">¿Ya tienes una cuenta?</a>
                 </center>
             </form>
         </div>
+
+        <?php
+           include("db.php"); 
+        ?>
+
     </body>
 </html>
