@@ -162,9 +162,30 @@ input[type="text"], input[type="password"]{
     margin-bottom: 20px;
 }
 
+/* cambios ollin */
 
+nav.menun{
+    background-color: #fbe99e;
+    width: 100%;
+    text-align: right;
+    
+}
 
+a.menua{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Bebas Neue, cursive;
+    color: #3a3939;
+    background: transparent;
+    margin: 3px;
+    transition: color 0.2s, background 0.2s;
+}
 
+a.menua:hover{
+    color: #ffffff;
+    background-color: transparent;
+
+}
 
 
 
