@@ -2,8 +2,6 @@
 
     session_start();
     $usuario = $_SESSION['username'];
-    echo "<h1>BIENVENIDO $usuario </h1>";
-
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +17,7 @@
     <body class="bodymenu">
         <header id="header2">
             <nav class = "menun">
+                <p>BIENVENID@ <?= $usuario ?> </p>
                 <a class ="menua" href="#" id="tutorial">Tutorial</a>
                 <a class = "menua" href="#" id="est">Estadisticas</a>
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
