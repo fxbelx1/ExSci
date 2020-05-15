@@ -34,21 +34,21 @@
             </p>
         </div>
         <br>
-        <div class="dropdown" style="float:left;">
-            <button class="dropbtn">Left</button>
+        <div class="dropdown" style="float:left; left:300px;">
+            <button class="dropbtn">Niveles</button>
             <div class="dropdown-content" style="left:0;">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">Fácil</a>
+              <a href="#">Medio</a>
+              <a href="#">Difícil</a>
             </div>
           </div>
           
-          <div class="dropdown" style="float:right;">
-            <button class="dropbtn">Right</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+          <div class="dropdown" style="float:right; right:300px">
+            <button class="dropbtn">Asignaturas</button>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">Matematicas</a>
+              <a href="#">Fisica</a>
+              <a href="#">Español</a>
             </div>
           </div>
     </body>
