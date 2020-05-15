@@ -1,8 +1,22 @@
-<?php
+<!--
+<o?php
 
     session_start();
-    $usuario = $_SESSION['username'];
+
+    require 'registrodb.php';
+
+    if(isset($_SESSION['nicknus'])){
+        $records = $conn->prepare('SELECT nicknus FROM usuario WHERE nicknus = :nickname')
+        $records->bindParam(':nickname', $_SESSION['nicknus']);
+        $records->execute();
+        $records = $records->fetch(PDO::FETCH_ASSOC);
+
+        if(count($results) > 0){
+            $usuario = $results;
+        }
+    }
 ?>
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +31,6 @@
     <body class="bodymenu">
         <header id="header2">
             <nav class = "menun">
-                <p>BIENVENID@ <?= $usuario ?> </p>
                 <a class ="menua" href="#" id="tutorial">Tutorial</a>
                 <a class = "menua" href="#" id="est">Estadisticas</a>
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
@@ -28,27 +41,26 @@
             <img id="menuimg" src="exsci_logo2.png" alt="Logo 2 de ExSci">
         </div>
         <div class="text">
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">BIENVENID@ <!--<0?= $usuario ?>--> </p>
             <p style= "font-family: 'Baloo Paaji 2', cursive;">
-                A continuación podras seleccionar entre los multiples niveles y materias que ExSci tiene para ti ... 
+                A continuación podras seleccionar entre las multiples asignaturas que ExSci tiene para ti ... 
             </p>
         </div>
         <br>
-        <div class="dropdown" style="float:left; left:300px;">
-            <button class="dropbtn">Niveles</button>
+        <div class="test">
+        <div class="dropdown">
+        <button class="dropbtn">Asignaturas</button>
             <div class="dropdown-content" style="left:0;">
-              <a href="#">Fácil</a>
-              <a href="#">Medio</a>
-              <a href="#">Difícil</a>
+                <a href="#">Matemáticas</a>
+                <a href="#">Física</a>
+                <a href="#">Biología</a>
+                <a href="#">Química</a>
             </div>
-          </div>
-          
-          <div class="dropdown" style="float:right; right:300px">
-            <button class="dropbtn">Asignaturas</button>
-            <div class="dropdown-content" style="left:0;">
-              <a href="#">Matematicas</a>
-              <a href="#">Fisica</a>
-              <a href="#">Español</a>
-            </div>
-          </div>
+        </div>
+        </div>
+        <br>
+        <div class = 'text2'>
+            <p style ="font-family: 'Baloo Paaji 2', cursive;">"! Acepta el reto ¡"</p>
+        </div>
     </body>
 </html>

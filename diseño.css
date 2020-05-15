@@ -166,6 +166,7 @@ input[type="text"], input[type="password"]{
 
 .bodymenu{
     background-color:#3a3939;
+    height: 900px;
 }
 
 .menun{
@@ -225,7 +226,7 @@ input[type="text"], input[type="password"]{
     border: none;
     cursor: pointer;
     font-family: Bebas Neue, cursive;
-    width: 300px;
+    width: fit-content;
     height: fit-content;
   }
   
@@ -258,4 +259,19 @@ input[type="text"], input[type="password"]{
   .dropdown-content a:hover {background-color: #f1f1f1;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #93ece9;}
+
+  .test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+    color: #ffffff;
+    font-size: 40px;
+  }
 
