@@ -172,7 +172,10 @@ input[type="text"], input[type="password"]{
     background-color: #fbe99e;
     width: 100%;
     text-align: right;
-    
+}
+
+#welcome{
+    text-align: left;
 }
 
 .menua{

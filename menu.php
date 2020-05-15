@@ -1,8 +1,16 @@
+<?php
+
+    session_start();
+    $usuario = $_SESSION['username'];
+    echo "<h1>BIENVENIDO $usuario </h1>";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>ExSci</title>
+        <title>menu</title>
         <link rel="stylesheet" href="diseño.css">
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  

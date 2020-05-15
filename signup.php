@@ -1,5 +1,5 @@
 <?php
-    include("db.php"); 
+    include("registrodb.php"); 
 ?>
 
 
@@ -33,7 +33,7 @@
                 
                 <center>
                     </br>
-                    <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
+                    <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="menu.php" id="comenzarxd" name="comenzar">
                     </br></br>
                     <a id="op" href="login.php" style="font-family: 'Baloo Paaji 2', cursive;">¿Ya tienes una cuenta?</a>
                 </center>
