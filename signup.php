@@ -1,3 +1,8 @@
+<?php
+    include("db.php"); 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,14 +35,9 @@
                     </br>
                     <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
                     </br></br>
-                    <a id="op" href="login.html" style="font-family: 'Baloo Paaji 2', cursive;">¿Ya tienes una cuenta?</a>
+                    <a id="op" href="login.php" style="font-family: 'Baloo Paaji 2', cursive;">¿Ya tienes una cuenta?</a>
                 </center>
             </form>
         </div>
-
-        <?php
-           include("db.php"); 
-        ?>
-
     </body>
 </html>
