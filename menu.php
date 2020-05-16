@@ -48,7 +48,7 @@
         </div>
         <br>
         <div class = 'text2'>
-            <p style ="font-family: 'Baloo Paaji 2', cursive;">"! Acepta el reto ¡"</p>
+            <p style ="font-family: 'Baloo Paaji 2', cursive;">! Acepta el reto ¡</p>
         </div>
     </body>
 </html>
