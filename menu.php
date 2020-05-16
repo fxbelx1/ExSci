@@ -1,22 +1,10 @@
-<!--
-<o?php
+<
+<?php
 
     session_start();
-
-    require 'registrodb.php';
-
-    if(isset($_SESSION['nicknus'])){
-        $records = $conn->prepare('SELECT nicknus FROM usuario WHERE nicknus = :nickname')
-        $records->bindParam(':nickname', $_SESSION['nicknus']);
-        $records->execute();
-        $records = $records->fetch(PDO::FETCH_ASSOC);
-
-        if(count($results) > 0){
-            $usuario = $results;
-        }
-    }
+    $usuario = $_SESSION['username'];
 ?>
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +29,7 @@
             <img id="menuimg" src="exsci_logo2.png" alt="Logo 2 de ExSci">
         </div>
         <div class="text">
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">BIENVENID@ <!--<0?= $usuario ?>--> </p>
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">BIENVENID@ <?= $usuario ?></p>
             <p style= "font-family: 'Baloo Paaji 2', cursive;">
                 A continuación podras seleccionar entre las multiples asignaturas que ExSci tiene para ti ... 
             </p>
