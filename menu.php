@@ -18,25 +18,26 @@
 
     <body class="bodymenu">
         <header id="header2">
+            <br>
+            <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
+            <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola <?= $usuario ?>!</h1>
+            <br>
             <nav class = "menun">
-                <a class ="menua" href="#" id="tutorial">Tutorial</a>
-                <a class = "menua" href="#" id="est">Estadisticas</a>
+                <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
+                <a class ="menua" href="#" >Tutorial</a>
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
             </nav>
         </header>
-        <br>
-        <div id="divi" class="imag">
-            <img id="menuimg" src="exsci_logo2.png" alt="Logo 2 de ExSci">
-        </div>
-        <div class="text">
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">BIENVENID@ <?= $usuario ?></p>
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">
-                A continuación podras seleccionar entre las multiples asignaturas que ExSci tiene para ti ... 
-            </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="estadisticas">
+            <br><br><br><br>
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">Tus estadisticas</p>
         </div>
         <br>
         <div class="test">
         <div class="dropdown">
+        <br><br><br><br>
+        <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
         <button class="dropbtn">Asignaturas</button>
             <div class="dropdown-content" style="left:0;">
                 <a href="#">Matemáticas</a>
@@ -46,9 +47,10 @@
             </div>
         </div>
         </div>
-        <br>
-        <div class = 'text2'>
-            <p style ="font-family: 'Baloo Paaji 2', cursive;">"! Acepta el reto ¡"</p>
+
+        <div id="tutorial">
+            <br><br><br><br>
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p> 
         </div>
     </body>
 </html>
