@@ -14,11 +14,7 @@
     </head>
         <header id="header2">
             <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
-<<<<<<< HEAD
-                <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola <?= $usuario ?>!</h1>
-=======
             <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola, <?= $usuario ?>!</h1>
->>>>>>> 74aea72568b0b4ca7398c553e69ba4ec9df1ac39
             <nav class = "menun">
                 <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
                 <a class ="menua" href="#" >Tutorial</a>
