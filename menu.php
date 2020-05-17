@@ -5,7 +5,6 @@
     $usuario = $_SESSION['username'];
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,29 +14,26 @@
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  
     </head>
-
-    <body class="bodymenu">
         <header id="header2">
-            <br>
             <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
             <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola <?= $usuario ?>!</h1>
-            <br>
             <nav class = "menun">
                 <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
                 <a class ="menua" href="#" >Tutorial</a>
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
             </nav>
         </header>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="estadisticas">
-            <br><br><br><br>
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">Tus estadisticas</p>
+        <body class="bodymenu">
+        <div class="maindiv"></div>
+        <div class="circular-progressdiv">
+        <div class="circular-progress"></div>
         </div>
-        <br>
-        <div class="test">
+        <hr>
+        <div class= "text1">
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
+        </div>
+        <div class="dropdownmenu">
         <div class="dropdown">
-        <br><br><br><br>
-        <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
         <button class="dropbtn">Asignaturas</button>
             <div class="dropdown-content" style="left:0;">
                 <a href="#">Matemáticas</a>
@@ -47,16 +43,12 @@
             </div>
         </div>
         </div>
-<<<<<<< HEAD
-        <br>
+        <hr>
         <div class = 'text2'>
-            <p style ="font-family: 'Baloo Paaji 2', cursive;">! Acepta el reto ¡</p>
-=======
-
-        <div id="tutorial">
-            <br><br><br><br>
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p> 
->>>>>>> ea423c5d3a5a7155a1b16abfeb2a0ad0929f0d8e
+            <p style= "font-family: 'Baloo Paaji 2', cursive;">Recuerda que cada materia tiene un nuevo reto para ti</p>
         </div>
+            <div class="tutorial">
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p>
+            </div>
     </body>
 </html>
