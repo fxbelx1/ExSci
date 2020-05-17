@@ -6,7 +6,7 @@
     $usuario = $_POST['nickname'];
     $contrasena = $_POST['contra'];
 
-    $query = mysqli_query($conexion, "SELECT * FROM usuario WHERE nicknus = '".$usuario."' and passus = '".$contrasena."'");
+    $query = mysqli_query($conexion, " SELECT * FROM usuario WHERE nickname_us = '$usuario' and contra_us = '$contrasena' ");
     $nr = mysqli_num_rows($query);
 
     if($nr == 1){
@@ -14,8 +14,6 @@
         header("Location: menu.php");
     }
     else if($nr == 0) {
-        echo "NO xd";
+        header("Location: login.php");
     }
-
-
 ?>

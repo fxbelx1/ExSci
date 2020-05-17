@@ -1,6 +1,4 @@
-<
 <?php
-
     session_start();
     $usuario = $_SESSION['username'];
 ?>
@@ -16,7 +14,7 @@
     </head>
         <header id="header2">
             <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
-            <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola <?= $usuario ?>!</h1>
+            <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola, <?= $usuario ?>!</h1>
             <nav class = "menun">
                 <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
                 <a class ="menua" href="#" >Tutorial</a>
