@@ -172,7 +172,7 @@ input[type="text"], input[type="password"]{
     margin: 0em;
     background-color:#3a3939;
     width: auto;
-    height: 1200px;
+    height: 2000px;
 
 }
 
@@ -314,4 +314,15 @@ hr{
     background-color: black;
   }
 
-/*barra circular de progreseo*/
+/*barras de progreso*/
+
+#containerprogreso{
+    width: 100%;
+    background-color: honeydew;
+}
+
+#progreso{
+    width: 1%;
+    height: 30px;
+    background-color: red;
+}
