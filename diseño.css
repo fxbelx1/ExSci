@@ -233,12 +233,12 @@ hr{
 /*menu desplegable*/
 
 .dropdownmenu{
-    display: flex;
     justify-content: center;
     background-color: white;
     color: black;
-    height: 700px;
+    height: 800px;
     width: auto;
+    text-align: center;
   }
 
 .dropbtn {
@@ -419,5 +419,12 @@ hr{
     height: 30px;
     background-color: #b826fc;
   }
+
+#ddmenu{
+  font-size: 40px;
+  color: black;
+  letter-spacing: 5px;
+  text-align: center;
+}
 
   

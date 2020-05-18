@@ -99,6 +99,10 @@
 
             <!--menu desplegable-->
             <div class="dropdownmenu">
+                <br><br><br>
+                <p id="ddmenu" style="font-family: 'Bebas Neue', cursive;">
+                SELECCIONA UNA DE LAS OPCIONES
+                </p>
                 <div class="dropdown">
                     <button class="dropbtn">Asignaturas</button>
                         <div class="dropdown-content" style="left:0;">
@@ -113,7 +117,7 @@
 
             <!--espacio para tutorial-->
             <div class="tutorial">
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p>
+            <p id="pmenu" style="font-family: 'Bebas Neue', cursive;">TUTORIAL</p>
             </div>
             <!--fin del espacio para tutorial-->
     </body>
