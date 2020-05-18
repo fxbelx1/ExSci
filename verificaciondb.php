@@ -6,7 +6,7 @@
     $usuario = $_POST['nickname'];
     $contrasena = $_POST['contra'];
 
-    $query = mysqli_query($conexion, " SELECT * FROM usuario WHERE nickname_us = '$usuario' and contra_us = '$contrasena' ");
+    $query = mysqli_query($conexion, " SELECT * FROM usuario WHERE nicknus = '$usuario' and passus = '$contrasena' ");
     $nr = mysqli_num_rows($query);
 
     if($nr == 1){
