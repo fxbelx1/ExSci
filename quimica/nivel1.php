@@ -77,12 +77,12 @@
                             <ol>
                                 <li>
                                     <p>Son las propiedades que varían de forma gradual al movernos en un determinado sentido en el sistema periódico.</p>
-                                    <div class="form-check" id="formz" action="check.php" method="POST">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="1" id="p1r1"> <label class="form-check-label" for="exampleRadios1">Propiedades Cualitativas</label>
+                                    <div class="form-check" id="formz" action="/exsci/check.php" method="POST">
+                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="1" id="p1"> <label class="form-check-label" for="exampleRadios1">Propiedades Cualitativas</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="2" id="p1r2"> <label class="form-check-label" for="exampleRadios2">Propiedades Cuantitativas</label>
+                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="2" id="p1"> <label class="form-check-label" for="exampleRadios2">Propiedades Cuantitativas</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="3" id="p1r3"> <label class="form-check-label" for="exampleRadios3">Propiedades Periódicas</label>
+                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="3" id="p1"> <label class="form-check-label" for="exampleRadios3">Propiedades Periódicas</label>
                                     </div>
                                 </li>
                                 <br>
@@ -130,7 +130,7 @@
                                     </div>
                                 </li>
                             </ol>
-                            <p style="text-align: center;"><button type="button" class="btn btn-success">¡LISTO!</button></p>
+                            <p style="text-align: center;"><input type="submit" class="btn btn-success" value="¡LISTO!" name="listo"></p>
                         </div>
                     </div>
                 </div>
