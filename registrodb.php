@@ -7,7 +7,7 @@
             $nickn = trim($_POST['nickname']);
             $pass = trim($_POST['contra']);
 
-            $consulta = "INSERT INTO usuario(nicknus, correous, passus, nivelmate, nivelfisica, nivelquim, nivelbio) 
+            $consulta = "INSERT INTO usuario(nickus, correous, passus, nivelmate, nivelfisica, nivelquim, nivelbio) 
                         VALUES ('$nickn','$correo','$pass',0,0,0,0)";
 
             $resultado = mysqli_query($conexion,$consulta);

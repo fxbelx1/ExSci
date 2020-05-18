@@ -2,7 +2,6 @@
     include("registrodb.php"); 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,7 +14,7 @@
 
     <body>
         <header id="header1">
-            <img id="logo5" src="exsci_logo.png" alt="Logo de ExSci">
+            <img id="logo5" src="/exsci/img/exsci_logo.png" alt="Logo de ExSci">
             </br></br>
         </header>
 

@@ -10,7 +10,7 @@
 
     <body>
         <header id="header1">
-            <img id="logo5" src="exsci_logo.png" alt="Logo de ExSci">
+            <img id="logo5" src="/exsci/img/exsci_logo.png" alt="Logo de ExSci">
             </br></br>
         </header>
 
@@ -19,8 +19,9 @@
             <form action="verificaciondb.php" method="POST">
                 <label style="font-family: 'Baloo Paaji 2', cursive;" for="nickname">Nombre de usuario</label>
                 <input type="text" placeholder="tu nombre de usuario" name="nickname">
-                <label style="font-family: 'Baloo Paaji 2', cursive;" for="contraseña">Contraseña</label>
+                <label style="font-family: 'Baloo Paaji 2', cursive;" for="contra">Contraseña</label>
                 <input type="password" placeholder="tu contraseña" name="contra">
+
                 <center>
                     </br>
                     <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
