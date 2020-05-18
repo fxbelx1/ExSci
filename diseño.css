@@ -236,7 +236,7 @@ hr{
     justify-content: center;
     background-color: white;
     color: black;
-    height: 800px;
+    height: 1000px;
     width: auto;
     text-align: center;
   }
@@ -311,19 +311,19 @@ hr{
     color: white;
     text-align: center;
     font-size: 20px;
-    height: 700px;
+    height: 1000px;
     width: auto;
     background-color: black;
   }
 
 /*barras de progreso*/
 
-.container{
+.container2{
     margin: auto;
     padding: 1.00em;
     color: white;
     font-size: 20px;
-    height: 940px;
+    height: 1000px;
     width: 500px;
     background-color: #3a3939;
     justify-content: center;
@@ -426,5 +426,26 @@ hr{
   letter-spacing: 5px;
   text-align: center;
 }
+
+#off{
+  position: relativate;
+    display: inline-block;
+    border: 2px solid;
+    border-color: transparent;
+    padding: 1px 50px;
+    color: #3a3939;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 100px;
+    transition: color 0.2s, background 0.2s;
+    letter-spacing: 3px;
+    background-color: transparent;
+}
+
+#off:hover{
+  color: red;
+  background-color: transparent;
+}
+
 
   
