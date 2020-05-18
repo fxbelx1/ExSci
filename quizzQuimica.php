@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col" id="box">
                     <p class="cabeza"><strong>QUÍMICA</strong></p>
-                    <div id="instrucciones" style="display=inline">
+                    <div id="instrucciones" style="display: inline">
                         <p>En esta sección se le mostrarán preguntas junto con tres posibles respuestas. De acuerdo a su conocimiento deberá seleccionar la respuesta que usted considere correcta.</p>
                         <p><strong>EJEMPLO:</strong></p>
                         
@@ -37,15 +37,26 @@
                             <p>¿Qué número atómico es el <strong>(P)Fósforo</strong>?</p>
                             <p>
                                 <div class="form-check" id="formz">
-                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled> <label class="form-check-label" for="exampleRadios1">92</label>
+                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" disabled> <label class="form-check-label" for="exampleRadios1">92</label>
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked disabled> <label class="form-check-label" for="exampleRadios2">15</label>
+                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" checked disabled> <label class="form-check-label" for="exampleRadios2">15</label>
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled> <label class="form-check-label" for="exampleRadios3">3</label>
+                                    &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" disabled> <label class="form-check-label" for="exampleRadios3">3</label>
                                 </div>
                             </p>
-                            <p style="text-align: center;"><button type="button" class="btn btn-dark" disabled>Atras</button> &nbsp; <button type="button" class="btn btn-dark" disabled>Siguiente</button></p>
-                            
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item disabled">
+                                        <a class="page-link disabled" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                         <br>
                         <div style="text-align: center;">
@@ -53,8 +64,31 @@
                         </div>
                     </div>
 
-                    <div class="preguntas">
-
+                    <div id="preguntas" style="display: none;">
+                        <div id="pregunta1"style="display: inline;">
+                            <p>Son las propiedades que varían de forma gradual al movernos en un determinado sentido en el sistema periódico.</p>
+                            <div class="form-check" id="formz">
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1r1" > <label class="form-check-label" for="exampleRadios1">Propiedades Cualitativas</label>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1r2" > <label class="form-check-label" for="exampleRadios2">Propiedades Cuantitativas</label>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1r3" > <label class="form-check-label" for="exampleRadios3">Propiedades Periódicas</label>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#2">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#3">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#4">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#5">5</a></li>
+                                        <a class="page-link" href="#6">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                     </div>
                 </div>
             </div>
