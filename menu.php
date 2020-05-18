@@ -16,14 +16,16 @@
             <img src="img/logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
             <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola, <?= $usuario ?>!</h1>
             <nav class = "menun">
-                <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
-                <a class ="menua" href="#" >Tutorial</a>
+                <a class = "menua" href="#est" id="off">Estadisticas</a>    
+                <a class = "menua" href="#caj" id="off">Comenzar a Jugar</a>
+                <a class ="menua" href="#tut" >Tutorial</a>
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
             </nav>
         </header>
     <body class="bodymenu">
-        <div class="container">
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container2">
+            <h5><a name="est">.</a></h5>
+            <br><br><br><br><br><br><br><br>
             <p id="pmenu" style="font-family: 'Bebas Neue', cursive;">TUS ESTADISTICAS</p>
 
             <!-- progreso matematicas -->
@@ -99,7 +101,8 @@
 
             <!--menu desplegable-->
             <div class="dropdownmenu">
-                <br><br><br>
+                <h3><a name="caj">.</a></h3>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
                 <p id="ddmenu" style="font-family: 'Bebas Neue', cursive;">
                 SELECCIONA UNA DE LAS OPCIONES
                 </p>
@@ -117,7 +120,9 @@
 
             <!--espacio para tutorial-->
             <div class="tutorial">
-            <p id="pmenu" style="font-family: 'Bebas Neue', cursive;">TUTORIAL</p>
+                <h4><a name="tut">.</a></h4>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <p id="pmenu" style="font-family: 'Bebas Neue', cursive;">TUTORIAL</p>
             </div>
             <!--fin del espacio para tutorial-->
     </body>
