@@ -73,69 +73,54 @@
                     </div>
 
                     <div id="preguntas" style="display: none;">
-                        <div id="preguntas15"style="display: inline;">
-                            <ol>
-                                <li>
-                                    <p>Son las propiedades que varían de forma gradual al movernos en un determinado sentido en el sistema periódico.</p>
-                                    <div class="form-check" id="formz" action="/exsci/check.php" method="POST">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="1" id="p1"> <label class="form-check-label" for="exampleRadios1">Propiedades Cualitativas</label>
+                        <div id="preguntas14 form-check"style="display: inline;"id="formz">
+                            <form action="/exsci/check.php" method="POST">
+                                <ol>
+                                    <li>
+                                        <p>Son las propiedades que varían de forma gradual al movernos en un determinado sentido en el sistema periódico.</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1[]" value="a" id="p1"> <label class="form-check-label" for="exampleRadios1">Propiedades Cualitativas</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="2" id="p1"> <label class="form-check-label" for="exampleRadios2">Propiedades Cuantitativas</label>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1[]" value="b" id="p1"> <label class="form-check-label" for="exampleRadios2">Propiedades Cuantitativas</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="3" id="p1"> <label class="form-check-label" for="exampleRadios3">Propiedades Periódicas</label>
-                                    </div>
-                                </li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1[]" value="c" id="p1"> <label class="form-check-label" for="exampleRadios3">Propiedades Periódicas</label>
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <p>Enlace que resulta de la transferencia de uno o más electrones de un átomo a otro átomo o un grupo de éstos.</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2[]" value="a" id="p2r1"> <label class="form-check-label" for="exampleRadios4">Enlace covalente</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2[]" value="b" id="p2r2"> <label class="form-check-label" for="exampleRadios5">Enlace iónico</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2[]" value="c" id="p2r3"> <label class="form-check-label" for="exampleRadios6">Enlace metálico</label>
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <p>Es un elemento con pocos electrones en su última capa y con gran tendencia a cederlos.</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3[]" value="a" id="p3r1"> <label class="form-check-label" for="exampleRadios7">Metal</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3[]" value="b" id="p3r2"> <label class="form-check-label" for="exampleRadios8">Semimetal</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3[]" value="c" id="p3r3"> <label class="form-check-label" for="exampleRadios9">No metal</label>
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <p>¿Cuál es el símbolo del elemento químico Einstenio?</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4[]" value="a" id="p4r1"> <label class="form-check-label" for="exampleRadios10">Ei</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4[]" value="b" id="p4r2"> <label class="form-check-label" for="exampleRadios11">Es</label>
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4[]" value="c" id="p4r3"> <label class="form-check-label" for="exampleRadios12">No tiene símbolo</label>
+                                    </li>
+                                    <br><br>
+                                </ol>
                                 <br>
-                                <li>
-                                    <p>Enlace que resulta de la transferencia de uno o más electrones de un átomo a otro átomo o un grupo de éstos.</p>
-                                    <div class="form-check" id="formz">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2" value="1" id="p2r1"> <label class="form-check-label" for="exampleRadios4">Enlace covalente</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2" value="2" id="p2r2"> <label class="form-check-label" for="exampleRadios5">Enlace iónico</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p2" value="3" id="p2r3"> <label class="form-check-label" for="exampleRadios6">Enlace metálico</label>
-                                    </div>
-                                </li>
-                                <br>
-                                <li>
-                                    <p>Es un elemento con pocos electrones en su última capa y con gran tendencia a cederlos.</p>
-                                    <div class="form-check" id="formz">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3" value="1" id="p3r1"> <label class="form-check-label" for="exampleRadios7">Metal</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3" value="2" id="p3r2"> <label class="form-check-label" for="exampleRadios8">Semimetal</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p3" value="3" id="p3r3"> <label class="form-check-label" for="exampleRadios9">No metal</label>
-                                    </div>
-                                </li>
-                                <br>
-                                <li>
-                                    <p>¿Cuál es el símbolo del elemento químico Einstenio?</p>
-                                    <div class="form-check" id="formz">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4" value="1" id="p4r1"> <label class="form-check-label" for="exampleRadios10">Ei</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4" value="2" id="p4r2"> <label class="form-check-label" for="exampleRadios11">Es</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p4" value="3" id="p4r3"> <label class="form-check-label" for="exampleRadios12">No tiene símbolo</label>
-                                    </div>
-                                </li>
-                                <br>
-                                <li>
-                                    <p>¿Cuál es el símbolo del elemento químico Oro?</p>
-                                    <div class="form-check" id="formz">
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p5" value="1" id="p5r1"> <label class="form-check-label" for="exampleRadios13">Or</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p5" value="2" id="p5r2"> <label class="form-check-label" for="exampleRadios14">Go</label>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p5" value="3" id="p5r3"> <label class="form-check-label" for="exampleRadios15">Au</label>
-                                    </div>
-                                </li>
-                            </ol>
-                            <p style="text-align: center;"><input type="submit" class="btn btn-success" value="¡LISTO!" name="listo"></p>
+                                <p style="text-align: center;"><input class="btn btn-success" type="submit" value="¡LISTO!" names></p>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tow"><br><br></div>
+            <div class="row"><br><br></div>
         </div>
 
         <script src="/ExSci/javascript.js"></script>

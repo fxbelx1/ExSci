@@ -107,9 +107,9 @@
                     <button class="dropbtn">Asignaturas</button>
                         <div class="dropdown-content" style="left:0;">
                             <a href="quizz">Matemáticas</a>
-                            <a href="/fisica/quizzFisica.php">Física</a>
+                            <a href="/fisica/nivel1.php">Física</a>
                             <a href="#">Biología</a>
-                            <a href="/exsci/quimica/quizzQuimica.php">Química</a>
+                            <a href="/exsci/quimica/nivel1.php">Química</a>
                         </div>
                 </div>
             </div>
