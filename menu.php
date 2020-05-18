@@ -24,6 +24,32 @@
     <body class="bodymenu">
             <div class="maindiv"></div>
         <hr>
+
+        <div class="container">
+            <div id="progresscontainer">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <button onclick="progress()">Click to progress</button>
+
+            <script>
+                function  progress(){
+                    var el = document.getElementById('progress');
+                    var width = 1;
+                    var id = setInterval(frame, 100);
+
+                    function frame(){
+                        if(width >= 100){
+                            clearInterval(id);
+                        }else{
+                            width++;
+                            el.style.width =width + '%';
+                        }
+                    }
+                }
+            </script>
+
             <div class= "text1">
                 <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
             </div>
@@ -45,31 +71,6 @@
                 <p style= "font-family: 'Baloo Paaji 2', cursive;">Recuerda que cada materia tiene un nuevo reto para ti</p>
             </div>
             <br>
-            <div class="barraprogreso">
-                <div id="containerprogreso">
-                    <div id="progreso"></div>
-                </div>
-            
-            <button onclick="progreso()">Pulsa para mostrar tu progreso</div>
-
-            <script>
-                function progreso(){
-                    var el = document.getElementById('progreso');
-                    var width = 1;
-                    var id = setInterval(frame, 100);
-
-                    function frame(){
-                        if(width >=100){
-                            clearInterval(id);
-                        }else{
-                            width++;
-                            el.style.width = width +'%';
-                        }
-                    }
-                }
-            </script>
-            </div>
-
         <hr>
             <!--espacio para tutorial-->
             <div class="tutorial">

@@ -316,13 +316,17 @@ hr{
 
 /*barras de progreso*/
 
-#containerprogreso{
-    width: 100%;
-    background-color: honeydew;
-}
-
-#progreso{
-    width: 1%;
-    height: 30px;
-    background-color: red;
-}
+.container{
+    padding: 15px;
+  }
+  
+  #progresscontainer{
+      width: 100%;
+      background-color: #ddd;
+  }
+  
+  #progress{
+      width: 1%;
+      height: 30px;
+      background-color: #337ab7;
+  }
