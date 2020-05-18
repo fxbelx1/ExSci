@@ -21,32 +21,60 @@
                 <a class = "menua" href="#" id="off">Cerrar Sesion</a>
             </nav>
         </header>
-        <body class="bodymenu">
-        <div class="maindiv"></div>
-        <div class="circular-progressdiv">
-        <div class="circular-progress"></div>
-        </div>
+    <body class="bodymenu">
+            <div class="maindiv"></div>
         <hr>
-        <div class= "text1">
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
-        </div>
-        <div class="dropdownmenu">
-        <div class="dropdown">
-        <button class="dropbtn">Asignaturas</button>
-            <div class="dropdown-content" style="left:0;">
-                <a href="#">Matemáticas</a>
-                <a href="#">Física</a>
-                <a href="#">Biología</a>
-                <a href="#">Química</a>
+            <div class= "text1">
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
             </div>
-        </div>
-        </div>
+            <!--menu desplegable-->
+            <div class="dropdownmenu">
+                <div class="dropdown">
+                    <button class="dropbtn">Asignaturas</button>
+                        <div class="dropdown-content" style="left:0;">
+                            <a href="#">Matemáticas</a>
+                            <a href="#">Física</a>
+                            <a href="#">Biología</a>
+                            <a href="#">Química</a>
+                        </div>
+                </div>
+            </div>
+            <!--fin de menu desplegable-->
         <hr>
-        <div class = 'text2'>
-            <p style= "font-family: 'Baloo Paaji 2', cursive;">Recuerda que cada materia tiene un nuevo reto para ti</p>
-        </div>
+            <div class = 'text2'>
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">Recuerda que cada materia tiene un nuevo reto para ti</p>
+            </div>
+            <br>
+            <div class="barraprogreso">
+                <div id="containerprogreso">
+                    <div id="progreso"></div>
+                </div>
+            
+            <button onclick="progreso()">Pulsa para mostrar tu progreso</div>
+
+            <script>
+                function progreso(){
+                    var el = document.getElementById('progreso');
+                    var width = 1;
+                    var id = setInterval(frame, 100);
+
+                    function frame(){
+                        if(width >=100){
+                            clearInterval(id);
+                        }else{
+                            width++;
+                            el.style.width = width +'%';
+                        }
+                    }
+                }
+            </script>
+            </div>
+
+        <hr>
+            <!--espacio para tutorial-->
             <div class="tutorial">
                 <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p>
             </div>
+            <!--fin del espacio para tutorial-->
     </body>
 </html>
