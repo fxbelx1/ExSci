@@ -24,7 +24,7 @@
 
                 <center>
                     </br>
-                    <input type="submit" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
+                    <input type="submit" value="comenzar" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
                     </br></br>
                     <a id="op" href="#" style="font-family: 'Baloo Paaji 2', cursive;">¿Olvidaste tu contraseña?</a>
                     </br>
