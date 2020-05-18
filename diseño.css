@@ -1,6 +1,7 @@
 body{
     margin: 0em;
     background-color: #3a3939;
+    color: #3a3939;
 }
 
 #izquierda{
@@ -155,8 +156,7 @@ input[type="text"], input[type="password"]{
     top: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #f8d859;
-    
+    background-color: #f8d859; 
 }
 
 #header2 h1{

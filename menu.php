@@ -12,6 +12,22 @@
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  
     </head>
+<<<<<<< HEAD
+    <header class="menun">
+        <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
+        <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola, <?= $usuario ?>!</h1>
+        <nav class = "menun">
+            <a class = "menua" href="#" id="off">Comenzar a Jugar</a>
+            <a class ="menua" href="#" >Tutorial</a>
+            <a class = "menua" href="#" id="off">Cerrar Sesion</a>
+        </nav>
+    </header>
+        <body class="bodymenu">
+        <div class="maindiv"></div>
+        <div class="circular-progressdiv">
+        <div class="circular-progress"></div>
+        </div>
+=======
         <header id="header2">
             <img src="logo3.png" alt="Logo de ExSci" class="img-fluid" alt="Responsive image">
             <h1 style="font-family: 'Bebas Neue', cursive;">¡Hola, <?= $usuario ?>!</h1>
@@ -23,6 +39,7 @@
         </header>
     <body class="bodymenu">
             <div class="maindiv"></div>
+>>>>>>> 294bf2d820fbb7d26b9dd1c7c88b2a7689bd7e3a
         <hr>
 
         <div class="container">
