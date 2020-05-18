@@ -26,8 +26,16 @@
         <hr>
 
         <div class="container">
-            <div id="progresscontainer">
-                <div id="progress"></div>
+        <br><br><br><br><br><br><br><br><br>
+            <p id="pmenu" style="font-family: 'Bebas Neue', cursive;">TUS ESTADISTICAS</p>
+
+            <div id="progresscontainerm">
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">Matematicas</p>
+                    <div id="progresscolor">
+                        <div id="progressm"></div>
+                    </div>
+                    <!--prueba-->
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">50%</p>
             </div>
         </div>
 
@@ -50,9 +58,6 @@
                 }
             </script>
 
-            <div class= "text1">
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">Selecciona una de las asignaturas</p>  
-            </div>
             <!--menu desplegable-->
             <div class="dropdownmenu">
                 <div class="dropdown">
@@ -66,12 +71,7 @@
                 </div>
             </div>
             <!--fin de menu desplegable-->
-        <hr>
-            <div class = 'text2'>
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">Recuerda que cada materia tiene un nuevo reto para ti</p>
-            </div>
-            <br>
-        <hr>
+
             <!--espacio para tutorial-->
             <div class="tutorial">
                 <p style= "font-family: 'Baloo Paaji 2', cursive;">Tutorial</p>

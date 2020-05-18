@@ -157,6 +157,7 @@ input[type="text"], input[type="password"]{
     width: 100%;
     overflow: hidden;
     background-color: #f8d859; 
+    position: fixed;
 }
 
 #header2 h1{
@@ -233,10 +234,11 @@ hr{
 
 .dropdownmenu{
     display: flex;
-    position: relative;
     justify-content: center;
-    background-color: #3a3939;
-    height: 400px;
+    background-color: white;
+    color: black;
+    height: 700px;
+    width: auto;
   }
 
 .dropbtn {
@@ -309,7 +311,7 @@ hr{
     color: white;
     text-align: center;
     font-size: 20px;
-    height: 500px;
+    height: 700px;
     width: auto;
     background-color: black;
   }
@@ -317,16 +319,46 @@ hr{
 /*barras de progreso*/
 
 .container{
-    padding: 15px;
+    margin: auto;
+    padding: 1.00em;
+    color: white;
+    font-size: 20px;
+    height: 940px;
+    width: 500px;
+    background-color: #3a3939;
+    justify-content: center;
   }
   
-  #progresscontainer{
-      width: 100%;
-      background-color: #ddd;
+  #pmenu{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+  }  
+
+  #progresscontainerm{
+    float: left;
+    width: auto;
+    margin: auto;
+    padding: 1.00em;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
+    background-color:#3a3939;
   }
   
-  #progress{
-      width: 1%;
-      height: 30px;
-      background-color: #337ab7;
-  }
+  #progressm{
+    width: 50%;
+    height: 30px;
+    background-color: #3fbe65;
+}
+
+#progresscolor{
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  background-color: #3a3939;
+  border-style: solid;
+}
