@@ -36,14 +36,14 @@
                         <p>Fenómeno que sufren los objetos al ser atraídos al centro de la Tierra</p>
                         <p>
                             <div class="form-check" id="formz">
-                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled> <label class="form-check-label" for="exampleRadios1"></label>
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled> <label class="form-check-label" for="exampleRadios1">Fuerza de tensión</label>
                                 <br>
-                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked disabled> <label class="form-check-label" for="exampleRadios2">Fuerza nuclear centralizada</label>
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled> <label class="form-check-label" for="exampleRadios2">Fuerza nuclear</label>
                                 <br>
-                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled> <label class="form-check-label" for="exampleRadios3">Fuerza de atracción gravitacional</label>
+                                &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked disabled> <label class="form-check-label" for="exampleRadios3">Fuerza de atracción gravitacional</label>
                             </div>
                         </p>
-                        <p style="text-align: center;"><button type="button" class="btn btn-dark" disabled>Atras</button> &nbsp; <button type="button" class="btn btn-dark">Siguiente</button></p>
+                        <p style="text-align: center;"><button type="button" class="btn btn-dark" disabled>Atras</button> &nbsp; <button type="button" class="btn btn-dark" disabled>Siguiente</button></p>
                         
                     </div>
                     <br>

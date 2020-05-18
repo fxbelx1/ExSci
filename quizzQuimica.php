@@ -43,7 +43,7 @@
                                 &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled> <label class="form-check-label" for="exampleRadios3">3</label>
                             </div>
                         </p>
-                        <p style="text-align: center;"><button type="button" class="btn btn-dark" disabled>Atras</button> &nbsp; <button type="button" class="btn btn-dark">Siguiente</button></p>
+                        <p style="text-align: center;"><button type="button" class="btn btn-dark" disabled>Atras</button> &nbsp; <button type="button" class="btn btn-dark" disabled>Siguiente</button></p>
                         
                     </div>
                     <br>
