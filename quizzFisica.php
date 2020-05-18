@@ -14,8 +14,9 @@
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
         <link rel="stylesheet" href="disenoQuizz.css">
+        <script src="jqueryfisica.js"></script>
 
-        <title>ExSci - Quizz [Química]</title>
+        <title>ExSci - Quizz [Física]</title>
     </head>
 
     <body>
@@ -33,7 +34,7 @@
                     <p><strong>EJEMPLO:</strong></p>
 
                     <div style="border: solid #3a3939 1px;">
-                        <p>Fenómeno que sufren los objetos al ser atraídos al centro de la Tierra</p>
+                        <p>Fenómeno que sufren los objetos al ser atraídos al centro de la Tierra:</p>
                         <p>
                             <div class="form-check" id="formz">
                                 &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled> <label class="form-check-label" for="exampleRadios1">Fuerza de tensión</label>
@@ -48,7 +49,7 @@
                     </div>
                     <br>
                     <div style="text-align: center;">
-                        <button type="button" class="btn btn-secondary">Entendido</button>
+                        <button type="button" class="btn btn-secondary" id="entendido">Entendido</button>
                     </div>
                 </div>
             </div>

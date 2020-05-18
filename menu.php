@@ -23,6 +23,7 @@
         </header>
     <body class="bodymenu">
             <div class="maindiv"></div>
+        <hr>
 
         <div class="container">
         <br><br><br><br><br><br><br><br><br>
@@ -62,10 +63,10 @@
                 <div class="dropdown">
                     <button class="dropbtn">Asignaturas</button>
                         <div class="dropdown-content" style="left:0;">
-                            <a href="#">Matemáticas</a>
-                            <a href="#">Física</a>
+                            <a href="quizz">Matemáticas</a>
+                            <a href="quizzFisica.php">Física</a>
                             <a href="#">Biología</a>
-                            <a href="#">Química</a>
+                            <a href="quizzQuimica.php">Química</a>
                         </div>
                 </div>
             </div>
