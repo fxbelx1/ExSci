@@ -12,6 +12,6 @@
 
             $resultado = mysqli_query($conexion,$consulta);
         }
-        header("Location: login.php");
+        header("Location: menu.php");
     }
 ?>
