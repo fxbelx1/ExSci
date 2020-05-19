@@ -1,4 +1,8 @@
 <?php
+    
+    require 'conexion.php'; 
+    $experiencia;
+
     session_start();
     $usuario = $_SESSION['username'];
     if(!isset($usuario)){
@@ -8,7 +12,8 @@
     if(isset($_POST['salir'])){
         session_destroy();
         header("location: login.php");
-    }
+    } 
+
 ?>
 
 <!DOCTYPE html>
