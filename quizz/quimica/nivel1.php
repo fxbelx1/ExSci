@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
-        <link rel="stylesheet" href="disenoQuizz.css">
+        <link rel="stylesheet" href="/exsci/quizz/disenoQuizz.css">
 
         <title>ExSci - Quizz [Química]</title>
     </head>
@@ -117,6 +117,11 @@
                                 <p style="text-align: center;"><input class="btn btn-success" type="submit" value="¡LISTO!" names></p>
                             </form>
                         </div>
+                    </div>
+
+                    <div class="resultados" style="display: none;" id="resultados">
+                        <p>Tus resultados son los siguientes:</p>
+
                     </div>
                 </div>
             </div>
