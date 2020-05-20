@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">  
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
-        <link rel="stylesheet" href="disenoQuizz.css">
+        <link rel="stylesheet" href="../disenoQuizz.css">
         <script src="jqueryfisica.js"></script>
 
         <title>ExSci - Quizz [Física]</title>

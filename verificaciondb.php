@@ -11,15 +11,6 @@
     if($nr == 1){
         $_SESSION['username'] = $usuario;
 
-        //extraccion de datos
-        $query = mysqli_query($conexion, "SELECT nivelmate, nivelfisica, nivelquim, nivelbio FROM usuario WHERE nickus = '$usuario'");
-        while($datos = mysqli_fetch_array($query)){
-            $expmate = $datos['nivelmate'];
-            $expfisica = $datos['nivelfisica'];
-            $expquim = $datos['nivelquim'];
-            $expbio = $datos['nivelbio'];
-        } 
-
         header("Location: menu.php"); 
 
     }

@@ -94,16 +94,6 @@
                     el.style.width =width + '%';
                     var id = setInterval(frame, 100);
 
-<<<<<<< HEAD
-                    function frame(){
-                        if(width >= 50){
-                            clearInterval(id);
-                        }else{
-                            width++;
-                            el.style.width = width + '%';
-                        }
-                    }
-=======
                     // barra de experiencia fisica
                     var el = document.getElementById('progressf');
                     var width = 30;
@@ -112,7 +102,7 @@
 
                     // barra de experiencia quimica
                     var el = document.getElementById('progressq');
-                    var width = 70;
+                    var width = 0;
                     el.style.width =width + '%';
                     var id = setInterval(frame, 100);
 
@@ -121,7 +111,6 @@
                     var width = 100;
                     el.style.width =width + '%';
                     var id = setInterval(frame, 100);
->>>>>>> 9ba83137752b4b5700bc91c3267e7b75f88097ec
                 }
             </script>
 
@@ -136,9 +125,9 @@
                     <button class="dropbtn">Asignaturas</button>
                         <div class="dropdown-content" style="left:0;">
                             <a href="quizz">Matemáticas</a>
-                            <a href="/exsci/quizz/fisica/nivel1.php">Física</a>
+                            <a href="quizz/fisica/nivel1.php">Física</a>
                             <a href="#">Biología</a>
-                            <a href="/exsci/quizz/quimica/nivel1.php">Química</a>
+                            <a href="quizz/quimica/nivel1.php">Química</a>
                         </div>
                 </div>
             </div>
