@@ -1,7 +1,6 @@
 <?php
     
-    require 'conexion.php'; 
-    $experiencia;
+    require 'conexion.php';
 
     session_start();
     $usuario = $_SESSION['username'];
@@ -13,6 +12,14 @@
         session_destroy();
         header("location: login.php");
     } 
+
+    $query = mysqli_query($conexion, "SELECT expmate, expfisica, expquim, expbio FROM usuario WHERE nickus = '$usuario'");
+        while($datos = mysqli_fetch_array($query)){
+            $expmate = $datos['expmate'];
+            $expfisica = $datos['expfisica'];
+            $expquim = $datos['expquim'];
+            $expbio = $datos['expbio'];
+        }
 
 ?>
 
@@ -78,33 +85,42 @@
 
         </div>
 
-            <script>
+            <script type="text/javascript">
                     // barra de experiencia matematicas
-                    var m = document.getElementById('progressm');
+                    var m = document.getElementById("progressm");
                     //* para sacar el porcentaje: son 20 preguntas con valor de 25 puntos (20x25)=500
                     //* 500 = 100%, asi que... (nivelmate x100)/500 = porcentaje :) 
-                    var width = 20;
-                    m.style.width =width + '%';
+                    var op = "<?php echo $expmate;?>";
+                    var width = (op*100)/500;
+                    m.style.width =width;
                     var id = setInterval(frame, 100);
+            </script>
 
+            <script>
                     // barra de experiencia fisica
-                    var f = document.getElementById('progressf');
-                    var width = 0;
+                    var f = document.getElementById("progressf");
+                    var op = "<?php echo $expfisica;?>";
+                    var width = (op*100)/500;
                     f.style.width =width + '%';
                     var id = setInterval(frame, 100);
+            </script>
 
+            <script>
                     // barra de experiencia quimica
-                    var q = document.getElementById('progressq');
-                    var width = 0;
-                    q.style.width =width + '%';
+                    var q = document.getElementById("progressq");
+                    var op = "<?php echo $expquim;?>";
+                    var width = (op*100)/500;
+                    q.style.width =width;
                     var id = setInterval(frame, 100);
+            </script>
 
+            <script>
                     // barra de experiencia biologia
-                    var b = document.getElementById('progressb');
-                    var width = 0;
+                    var b = document.getElementById("progressb");
+                    var op = "<?php echo $expbio;?>";
+                    var width = (op*100)/500;
                     b.style.width =width + '%';
-                    var id = setInterval(frame, 100);
-                
+                    var id = setInterval(frame, 100); 
             </script>
 
             <!--menu desplegable-->
