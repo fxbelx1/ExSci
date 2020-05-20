@@ -74,7 +74,7 @@
 
                     <div id="preguntas" style="display: none;">
                         <div id="preguntas14 form-check"style="display: inline;"id="formz">
-                            <form action="/exsci/check.php" method="POST">
+                            <form action="/exsci/quizz/quimica/check.php" method="POST">
                                 <ol>
                                     <li>
                                         <p>Son las propiedades que varían de forma gradual al movernos en un determinado sentido en el sistema periódico.</p>
