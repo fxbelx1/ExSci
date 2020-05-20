@@ -40,11 +40,11 @@
                     var id = setInterval(frame, 100);
 
                     function frame(){
-                        if(width >= 100){
+                        if(width >= 50){
                             clearInterval(id);
                         }else{
                             width++;
-                            el.style.width =width + '%';
+                            el.style.width = width + '%';
                         }
                     }
                 }
