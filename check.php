@@ -44,9 +44,8 @@
 
     $exp = "UPDATE usuario SET expquim='$expquim' WHERE nickus='$usuario'"; //SE ACTUALIZA EL CAMPO 'EXPMQUIM' donde $usuario
     $res = mysqli_query($conexion, $exp);   //SE SINCRONIZA LA BASE DE DATOS
-
-
 ?>
+
 
 <!doctype html>
 <html lang="en">
