@@ -49,8 +49,6 @@
                     <div id="progresscolor">
                         <div id="progressm"></div>
                     </div>
-                    <!--prueba-->
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">50%</p>
             </div>
 
             <!-- progreso fisica -->
@@ -59,8 +57,6 @@
                     <div id="progresscolor">
                         <div id="progressf"></div>
                     </div>
-                    <!--prueba-->
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">30%</p>
             </div>
 
             <!-- progreso quimica -->
@@ -69,8 +65,6 @@
                     <div id="progresscolor">
                         <div id="progressq"></div>
                     </div>
-                    <!--prueba-->
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">70%</p>
             </div>
 
             <!-- progreso biologia -->
@@ -79,39 +73,38 @@
                     <div id="progresscolor">
                         <div id="progressb"></div>
                     </div>
-                    <!--prueba-->
-                <p style= "font-family: 'Baloo Paaji 2', cursive;">100%</p>
+
             </div>
 
         </div>
 
             <script>
                     // barra de experiencia matematicas
-                    var el = document.getElementById('progressm');
+                    var m = document.getElementById('progressm');
                     //* para sacar el porcentaje: son 20 preguntas con valor de 25 puntos (20x25)=500
                     //* 500 = 100%, asi que... (nivelmate x100)/500 = porcentaje :) 
-                    var width = 50;
-                    el.style.width =width + '%';
+                    var width = 20;
+                    m.style.width =width + '%';
                     var id = setInterval(frame, 100);
 
                     // barra de experiencia fisica
-                    var el = document.getElementById('progressf');
-                    var width = 30;
-                    el.style.width =width + '%';
+                    var f = document.getElementById('progressf');
+                    var width = 0;
+                    f.style.width =width + '%';
                     var id = setInterval(frame, 100);
 
                     // barra de experiencia quimica
-                    var el = document.getElementById('progressq');
+                    var q = document.getElementById('progressq');
                     var width = 0;
-                    el.style.width =width + '%';
+                    q.style.width =width + '%';
                     var id = setInterval(frame, 100);
 
                     // barra de experiencia biologia
-                    var el = document.getElementById('progressb');
-                    var width = 100;
-                    el.style.width =width + '%';
+                    var b = document.getElementById('progressb');
+                    var width = 0;
+                    b.style.width =width + '%';
                     var id = setInterval(frame, 100);
-                }
+                
             </script>
 
             <!--menu desplegable-->
