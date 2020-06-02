@@ -1,7 +1,7 @@
 <?php
     session_start();
     $usuario = $_SESSION['username'];
-    include("conexion.php"); 
+    include($_SERVER['DOCUMENT_ROOT'].'/exsci/conexion.php'); 
 
 ///////////////EXTRAER 'EXPMATERIA' DEL USUARIO/////////////////
 
@@ -59,7 +59,7 @@
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css'>
         <link rel="stylesheet" href="/exsci/quizz/disenoQuizz.css">
 
-        <title>ExSci - Quizz [Química]</title>
+        <title>ExSci - Quizz [Física]</title>
     </head>
 
     <body>

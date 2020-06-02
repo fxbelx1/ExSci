@@ -25,7 +25,9 @@
                 <center>
                     </br>
                     <input type="submit" value="comenzar" style="font-family: 'Bebas Neue', cursive;" href="#" id="comenzarxd" name="comenzar">
-
+                    </br></br>
+                    <a id="op" href="#" style="font-family: 'Baloo Paaji 2', cursive;">¿Olvidaste tu contraseña?</a>
+                    </br>
                     <a id="op" href="signup.php" style="font-family: 'Baloo Paaji 2', cursive;">¿No tienes cuenta?</a>
                 </center>
             </form>

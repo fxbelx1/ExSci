@@ -1,48 +1,31 @@
 <?php
     session_start();
     $usuario = $_SESSION['username'];
-    include("conexion.php"); 
+    include($_SERVER['DOCUMENT_ROOT'].'/exsci/conexion.php'); 
 
-///////////////EXTRAER 'EXPMATERIA' DEL USUARIO/////////////////
-
-    $queryusr = mysqli_query($conexion, " SELECT * FROM usuario WHERE nickus='$usuario' ");
-    $querypreg = mysqli_query($conexion, " SELECT idp, respcorr, puntosp FROM pregunta ");
+    $queryusr = mysqli_query($conexion, " SELECT * FROM usuario WHERE nickus='$usuario' ");     //OBTENCIÓN DE LOS TODOS LOS CAMPOS DE LA TABLA usuario
+    $querypreg = mysqli_query($conexion, " SELECT idp, respcorr, puntosp FROM pregunta ");      //OBTENCIÓN DE LOS CAMPOS idp, respcorr, puntosp DE LA TABLA pregunta
 
     while( $datosus = mysqli_fetch_array($queryusr) ){
         $expquim = $datosus['expquim'];
     }
 
-    while( $datospreg = mysqli_fetch_array($querypreg) ){
-        $idpreg = $datospreg['idp'];
-        $exppreg = $datospreg['puntosp'];
+    $expquizz = 0;  //EXPERIENCIA OBTENIDA EN EL QUIZZ
+    $r = 1;     //CONTADOR DE PREGUNTA
+
+    while ($row = mysqli_fetch_assoc($querypreg)) {
+        $respus = $_POST['p'.$r];
+        if($row["idp"] == $r && $row["respcorr"] == $respus){
+            $expquim = $expquim + $row["puntosp"];
+            $expquizz = $expquizz + $row["puntosp"];
+        }
+        $r = $r + 1;
+        if($r == 5){
+            break;
+        }
     }
 
-////////////////////////////////////////////////////////////////
-
-    $r1 = $_POST['p1'];
-    $r2 = $_POST['p2'];
-    $r3 = $_POST['p3'];
-    $r4 = $_POST['p4'];
-    $expquizz = 0;
-
-    if($r1 == 'c' && $r1 != NULL){
-        $expquim = $expquim + 25;
-        $expquizz = $expquizz + 25;
-    }
-    if($r2 == 'b' && $r2 != NULL){
-        $expquim = $expquim + 25;
-        $expquizz = $expquizz + 25;
-    }
-    if($r3 == 'a' && $r3 != NULL){
-        $expquim = $expquim + 25;
-        $expquizz = $expquizz + 25;
-    }
-    if($r4 == 'b' && $r4 != NULL){
-        $expquim = $expquim + 25;
-        $expquizz = $expquizz + 25;
-    }
-
-    $exp = "UPDATE usuario SET expquim='$expquim' WHERE nickus='$usuario'"; //SE ACTUALIZA EL CAMPO 'EXPMQUIM' donde $usuario
+    $exp = "UPDATE usuario SET expquim='$expquim' WHERE nickus='$usuario'"; //SE ACTUALIZA EL CAMPO expquim DE LA TABLA usuario DONDE EL NOMBRE DEL USUARIO SEA IGUAL AL CAMPO nickus
     $res = mysqli_query($conexion, $exp);   //SE SINCRONIZA LA BASE DE DATOS
 ?>
 

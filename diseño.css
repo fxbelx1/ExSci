@@ -376,6 +376,13 @@ hr{
     background-color:#3a3939;
   }
   
+<<<<<<< HEAD
+  #progress{
+      width: 20%;
+      height: 30px;
+      background-color: #337ab7;
+  }
+=======
   #progressf{
     width: 30%;
     height: 30px;
@@ -414,11 +421,11 @@ hr{
     background-color:#3a3939;
   }
   
-#progressb{
-  width: 30%;
-  height: 30px;
-  background-color: #b826fc;
-}
+  #progressb{
+    width: 100%;
+    height: 30px;
+    background-color: #b826fc;
+  }
 
 #ddmenu{
   font-size: 40px;
@@ -449,3 +456,4 @@ hr{
 
 
   
+>>>>>>> 9ba83137752b4b5700bc91c3267e7b75f88097ec

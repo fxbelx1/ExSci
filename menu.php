@@ -1,7 +1,4 @@
 <?php
-    
-    require 'conexion.php';
-
     session_start();
     $usuario = $_SESSION['username'];
     if(!isset($usuario)){
@@ -11,16 +8,7 @@
     if(isset($_POST['salir'])){
         session_destroy();
         header("location: login.php");
-    } 
-
-    $query = mysqli_query($conexion, "SELECT expmate, expfisica, expquim, expbio FROM usuario WHERE nickus = '$usuario'");
-        while($datos = mysqli_fetch_array($query)){
-            $expmate = $datos['expmate'];
-            $expfisica = $datos['expfisica'];
-            $expquim = $datos['expquim'];
-            $expbio = $datos['expbio'];
-        }
-
+    }
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +44,8 @@
                     <div id="progresscolor">
                         <div id="progressm"></div>
                     </div>
+                    <!--prueba-->
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">50%</p>
             </div>
 
             <!-- progreso fisica -->
@@ -64,6 +54,8 @@
                     <div id="progresscolor">
                         <div id="progressf"></div>
                     </div>
+                    <!--prueba-->
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">30%</p>
             </div>
 
             <!-- progreso quimica -->
@@ -72,6 +64,8 @@
                     <div id="progresscolor">
                         <div id="progressq"></div>
                     </div>
+                    <!--prueba-->
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">70%</p>
             </div>
 
             <!-- progreso biologia -->
@@ -80,47 +74,50 @@
                     <div id="progresscolor">
                         <div id="progressb"></div>
                     </div>
-
+                    <!--prueba-->
+                <p style= "font-family: 'Baloo Paaji 2', cursive;">100%</p>
             </div>
 
         </div>
 
-            <script type="text/javascript">
+            <script>
                     // barra de experiencia matematicas
-                    var m = document.getElementById("progressm");
+                    var el = document.getElementById('progressm');
                     //* para sacar el porcentaje: son 20 preguntas con valor de 25 puntos (20x25)=500
                     //* 500 = 100%, asi que... (nivelmate x100)/500 = porcentaje :) 
-                    var op = "<?php echo $expmate;?>";
-                    var width = (op*100)/500;
-                    m.style.width =width;
+                    var width = 50;
+                    el.style.width =width + '%';
                     var id = setInterval(frame, 100);
-            </script>
 
-            <script>
+<<<<<<< HEAD
+                    function frame(){
+                        if(width >= 50){
+                            clearInterval(id);
+                        }else{
+                            width++;
+                            el.style.width = width + '%';
+                        }
+                    }
+=======
                     // barra de experiencia fisica
-                    var f = document.getElementById("progressf");
-                    var op = "<?php echo $expfisica;?>";
-                    var width = (op*100)/500;
-                    f.style.width =width + '%';
+                    var el = document.getElementById('progressf');
+                    var width = 30;
+                    el.style.width =width + '%';
                     var id = setInterval(frame, 100);
-            </script>
 
-            <script>
                     // barra de experiencia quimica
-                    var q = document.getElementById("progressq");
-                    var op = "<?php echo $expquim;?>";
-                    var width = (op*100)/500;
-                    q.style.width =width;
+                    var el = document.getElementById('progressq');
+                    var width = 70;
+                    el.style.width =width + '%';
                     var id = setInterval(frame, 100);
-            </script>
 
-            <script>
                     // barra de experiencia biologia
-                    var b = document.getElementById("progressb");
-                    var op = "<?php echo $expbio;?>";
-                    var width = (op*100)/500;
-                    b.style.width =width + '%';
-                    var id = setInterval(frame, 100); 
+                    var el = document.getElementById('progressb');
+                    var width = 100;
+                    el.style.width =width + '%';
+                    var id = setInterval(frame, 100);
+>>>>>>> 9ba83137752b4b5700bc91c3267e7b75f88097ec
+                }
             </script>
 
             <!--menu desplegable-->
@@ -134,9 +131,9 @@
                     <button class="dropbtn">Asignaturas</button>
                         <div class="dropdown-content" style="left:0;">
                             <a href="quizz">Matemáticas</a>
-                            <a href="quizz/fisica/nivel1.php">Física</a>
+                            <a href="/exsci/quizz/fisica/nivel1.php">Física</a>
                             <a href="#">Biología</a>
-                            <a href="quizz/quimica/nivel1.php">Química</a>
+                            <a href="/exsci/quizz/quimica/nivel1.php">Química</a>
                         </div>
                 </div>
             </div>
