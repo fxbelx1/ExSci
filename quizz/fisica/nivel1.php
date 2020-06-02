@@ -74,15 +74,15 @@
 
                     <div id="preguntas" style="display: none;">
                         <div id="preguntas14 form-check"style="display: inline;"id="formz">
-                            <form action="/exsci/check.php" method="POST">
+                            <form action="/exsci/quizz/fisica/check.php" method="POST">
                                 <ol>
                                     <li>
-                                        <p>La densidad de un cuerpo se expresa en…</p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="a" id="p1"> <label class="form-check-label MathJax" for="exampleRadios1">Kilogramos \((Kg)\)</label>
+                                        <p>Se divide en cinemática y dinámica: </p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="a" id="p1"> <label class="form-check-label MathJax" for="exampleRadios1">Termodinámica</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="b" id="p1"> <label class="form-check-label" for="exampleRadios2">Litros \((L)\)</label>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="b" id="p1"> <label class="form-check-label" for="exampleRadios2">Mecánica</label>
                                         <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="c" id="p1"> <label class="form-check-label" for="exampleRadios3">Gramos por centímetro cúbico \(({g\over cm^3})\)</label>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="p1" value="c" id="p1"> <label class="form-check-label" for="exampleRadios3">Arte</label>
                                     </li>
                                     <br><br>
                                     <li>

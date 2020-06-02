@@ -9,7 +9,7 @@
     $querypreg = mysqli_query($conexion, " SELECT idp, respcorr, puntosp FROM pregunta ");
 
     while( $datosus = mysqli_fetch_array($queryusr) ){
-        $expquim = $datosus['expquim'];
+        $expfisica = $datosus['expquim'];
     }
 
     while( $datospreg = mysqli_fetch_array($querypreg) ){
@@ -25,24 +25,26 @@
     $r4 = $_POST['p4'];
     $expquizz = 0;
 
-    if($r1 == 'c' && $r1 != NULL){
-        $expquim = $expquim + 25;
+    if($r1 == 'a' && $r1 != NULL){
+        $expfisica = $expfisica + 25;
         $expquizz = $expquizz + 25;
     }
-    if($r2 == 'b' && $r2 != NULL){
-        $expquim = $expquim + 25;
+    if($r2 == 'c' && $r2 != NULL){
+        $expfisica = $expfisica + 25;
         $expquizz = $expquizz + 25;
     }
-    if($r3 == 'a' && $r3 != NULL){
-        $expquim = $expquim + 25;
+    if($r3 == 'c' && $r3 != NULL){
+        $expfisica = $expfisica + 25;
         $expquizz = $expquizz + 25;
     }
-    if($r4 == 'b' && $r4 != NULL){
-        $expquim = $expquim + 25;
+    if($r4 == 'a' && $r4 != NULL){
+        $expfisica = $expfisica + 25;
         $expquizz = $expquizz + 25;
     }
 
-    $exp = "UPDATE usuario SET expquim='$expquim' WHERE nickus='$usuario'"; //SE ACTUALIZA EL CAMPO 'EXPMQUIM' donde $usuario
+    $expfisica = $expfisica + $expquizz;
+
+    $exp = "UPDATE usuario SET expfisica='$expfisica' WHERE nickus='$usuario'"; //SE ACTUALIZA EL CAMPO 'EXPMQUIM' donde $usuario
     $res = mysqli_query($conexion, $exp);   //SE SINCRONIZA LA BASE DE DATOS
 ?>
 
